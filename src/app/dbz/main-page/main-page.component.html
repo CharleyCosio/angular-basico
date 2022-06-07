@@ -1,0 +1,30 @@
+<h1>Dragon Ball Z</h1>
+<hr>
+
+<div class="row">
+    <div class="col">
+        <app-personajes></app-personajes>
+        <!-- <app-personajes [data]="personajes"></app-personajes> -->
+        <!-- <h3>Personajes</h3>
+        <hr>
+        <ul>
+            paid: | number pone formato de numero
+            <li *ngFor="let per of personajes">{{per.nombre}} - {{per.poder |number}}</li>
+        </ul> -->
+    </div>
+    <div class="col">
+        <app-agregar [nuevo]="nuevo"></app-agregar>
+        <!-- <app-agregar [nuevo]="nuevo" (onNuevoPersonaje)="agregarNuevoPer($event)"></app-agregar> -->
+        <!-- <h3>Agregar: <small>{{nuevo.nombre}}</small></h3>
+        <hr>
+        //PARENTESIS EVENTOS Y LLAVES [] SON PARA ASIGNAR PROPIEDADES DEL TS AL HTML LAS VARIABLES
+        <form (ngSubmit)="agregar()">
+            <input type="text" placeholder="Nombre" [value]="nuevo.nombre" (input)="cambiarNombre($event)" />
+            <input type="text" name="nombre" placeholder="Nombre" [(ngModel)]="nuevo.nombre" />
+            <input type="number" name="poder" placeholder="Poder" [(ngModel)]="nuevo.poder" />
+            <button type="submit">
+                Agregar
+            </button>
+        </form> -->
+    </div>
+</div>
